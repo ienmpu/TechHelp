@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: .9;
+    height: 80px;
+    z-index: 6;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu {
+    order: 2;
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: helvetica;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #e8c99a;
+    transition: 0.3s ease-in-out;
+}
+
+.logo {
+    color: #e8c99a;
+    order: 1;
+    font-size: 26px;
+    margin-top: -5px;
+    font-family: "arial black";
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(232, 201, 154, 0.4),
+        rgba(255, 255, 255, 0.2)
+    ), url('img/5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-dop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+    font-family: helvetica;
+    color: #fff;
+    text-shadow: 0 5px 3px #000;
+}
+
+#title {
+    margin-top: 45vh;
+    font-size: 60px;
+    font-family: helvetica;
+    color: #fff;
+}
+.logo {
+    font-size: 24px; /* Размер текста */
+}
+
+.logo img {
+    height: 50px; /* Высота логотипа */
+    width: auto; /* Ширина будет автоматически рассчитываться, чтобы сохранить пропорции */
+    vertical-align: middle; /* Выравнивание по вертикали */
+    margin-right: 5px; /* Добавление небольшого отступа между изображением и текстом */
+}

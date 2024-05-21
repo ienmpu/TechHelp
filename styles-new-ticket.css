@@ -1,0 +1,127 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: .9;
+    height: 80px;
+    z-index: 6;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu {
+    order: 2;
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: helvetica;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #e8c99a;
+    transition: 0.3s ease-in-out;
+}
+
+.logo {
+    color: #e8c99a;
+    order: 1;
+    font-size: 26px;
+    margin-top: -5px;
+    font-family: "arial black";
+}
+
+.form-section {
+    padding: 100px 0;
+    font-family: helvetica;
+    color: #000;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid #08080818;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.form-part {
+    margin: 10px 0;
+}
+
+.form label {
+    font-family: helvetica;
+    font-weight: 600;
+}
+
+.form select,
+.form textarea,
+.form input[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e8c99a;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.form select:focus,
+.form textarea:focus,
+.form input[type="submit"]:focus {
+    border-color: #aaa;
+}
+
+.form input[type="submit"] {
+    background-color: #e8c99a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #fae2be;
+}
+.logo img {
+    height: 50px; /* Высота логотипа */
+    width: auto; /* Ширина будет автоматически рассчитываться, чтобы сохранить пропорции */
+    vertical-align: middle; /* Выравнивание по вертикали */
+    margin-right: 5px; /* Добавление небольшого отступа между изображением и текстом */
+}
